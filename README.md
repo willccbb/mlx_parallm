@@ -3,12 +3,12 @@
 
 Batched KV caching for fast parallel inference on Apple Silicon devices, via [MLX](https://github.com/ml-explore/mlx). 
 
-This repo heavily borrows from [`mlx_lm`](https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm); exploring how to add batched generation as a non-breaking PR. 
+This repo heavily borrows from [`mlx_lm`](https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm). Will explore how to add batched generation there as a non-breaking PR. 
 
 
 ## Usage
 Requires `mlx` and `mlx_lm` to be installed.
-```
+```python
 from mlx_parallm.utils import load, batch_generate
 model, tokenizer = load("google/gemma-1.1-2b-it")
 prompts = ["prompt_0", ..., "prompt_k"]
