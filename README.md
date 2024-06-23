@@ -30,7 +30,7 @@ Additional models can be added by copying architecture files from [`mlx_lm/model
 
 ## Features
 Supported:
-- `batch_generate` method (tested with `batch_size` > 500)
+- `batch_generate` method (tested with `len(prompts) > 500`)
 - Auto-padding
 - Auto-formatting with prompt templates (`format_prompts=True`)
 - `temp = 0`, `temp > 0`, `top_p` sampling
