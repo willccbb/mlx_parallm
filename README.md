@@ -22,8 +22,9 @@ Models tested:
 - `google/gemma-1.1-2b-it`
 - `mlx-community/Phi-3-mini-4k-instruct-4bit`
 - `mlx-community/gemma-1.1-2b-it-4bit`
+- `mlx-community/Meta-Llama-3-8B-Instruct-4bit`
 
-Both quantized and `float16` models are supported. `float16` models appear to generally perform faster if sufficient RAM is available (up to 1300+ tok/s throughput for `gemma-2b` on M3 Max 128GB).
+Both quantized and `float16` models are supported. `float16` models seem to generally perform faster if sufficient RAM is available (up to 1300+ tok/s throughput for `gemma-2b` on M3 Max 128GB).
 
 Additional models can be added by copying architecture files from [`mlx_lm/models`](https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm/models) and replacing any references to `KVCache` with `BatchedKVCache`. 
 
