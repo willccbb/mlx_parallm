@@ -20,9 +20,10 @@ Models tested:
 - `meta-llama/Meta-Llama-3-8B-Instruct`
 - `microsoft/Phi-3-mini-4k-instruct`
 - `google/gemma-1.1-2b-it`
+- `mlx-community/Meta-Llama-3-8B-Instruct-4bit`
 - `mlx-community/Phi-3-mini-4k-instruct-4bit`
 - `mlx-community/gemma-1.1-2b-it-4bit`
-- `mlx-community/Meta-Llama-3-8B-Instruct-4bit`
+
 
 Both quantized and `float16` models are supported. `float16` models seem to generally perform faster if sufficient RAM is available (up to 1300+ tok/s throughput for `gemma-2b` on M3 Max 128GB).
 
