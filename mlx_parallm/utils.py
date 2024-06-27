@@ -229,6 +229,7 @@ def generate_step(
     while True:
         next_y, next_p = _step(y)
         mx.async_eval(next_y)
+        mx.eval(y)
         yield y, p
         y, p = next_y, next_p
 
